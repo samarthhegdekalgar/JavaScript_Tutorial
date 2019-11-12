@@ -1,4 +1,5 @@
-document.getElementById('get-info-btn').addEventListener('click', makeEvent);
+// document.getElementById('get-info-btn').addEventListener('click', makeEvent);
+window.addEventListener('load', makeEvent);
 let httpRequest;
 
 function makeEvent() {
@@ -16,7 +17,7 @@ function displayInfo() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
         if (httpRequest.status === 200) {
             let tweetData = JSON.parse(httpRequest.responseText)
-            let idTweetData = document.getElementById('tweet-data');
+            let idTweetData = document.getElementById('body-content');
             for (let i = 0; i < tweetData.length; i++) {
                 idTweetData.insertAdjacentHTML('beforeend', '<h1>' + tweetData[i]['content'] + '</h1>')
             }

@@ -15,7 +15,11 @@ function makeEvent() {
 function displayInfo() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
         if (httpRequest.status === 200) {
-            console.log(httpRequest.responseText);
+            let tweetData = JSON.parse(httpRequest.responseText)
+            let idTweetData = document.getElementById('tweet-data');
+            for (let i = 0; i < tweetData.length; i++) {
+                idTweetData.insertAdjacentHTML('beforeend', '<h1>' + tweetData[i]['content'] + '</h1>')
+            }
         } else {
             alert('Error!!!');
         }

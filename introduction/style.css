@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Montserrat;
+    background: url(bck.jpg) no-repeat;
+    width: 100%;
+    box-shadow: 0px 0px 80px 40px #14dbc1 inset;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #14dbc1;
+    box-shadow: 0px 0px 40px 40px #14dbc1;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+    margin-left: 20px;
+}
+
+#title span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+    width: 10%;
+    height: 70%;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+#navbar a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#body-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
